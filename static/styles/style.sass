@@ -1,0 +1,356 @@
+i
+  display: inline-block
+h2
+  font-size: 25px
+
+*
+  color: #3F5D45
+  // box-sizing: border-box
+.wrap
+  width: 100%
+  max-width: 940px
+  margin: 0 auto
+.flexBox
+  display: flex
+  // padding: 36px 0
+// -------------naverbar的設定----------------
+.header .brand-img
+  display: flex
+  align-items: center
+  padding: 36px 0
+.brand-img img
+  width: 220px
+.nav
+  width: 100%
+  display: flex
+  justify-content: flex-end
+  align-items: center
+  // box-sizing: border-box
+.nav a 
+  text-decoration: none
+  padding-left: 60px
+  font-weight: bold
+  &:nth-child(4)
+    // padding-left: 79px    
+    width: 24px
+// -------------banner的設定----------------
+.banner-img
+  max-width: 940px
+  width: 100%
+  height: 496px
+  background-image: url("https://images.unsplash.com/photo-1473256599800-b48c7c88cd7e?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=ae0d68ab0db4ee79bdce92722b31112b&auto=format&fit=crop&w=2725&q=80")
+  background-size: 100%
+  background-position: 0 -120px
+  background-repeat: no-repeat
+  // position: 
+  // overflow: hidden
+  // position: relative
+  // img
+  //   position: absolute
+  //   // transform: 
+  //   // top: 160px
+
+// -------------subnav的設定----------------
+
+.subnav 
+  display: flex
+  justify-content: center
+  // 調整下面距離
+  margin-bottom: -67px
+  a
+    transform: translateY(-70px)
+    text-decoration: none
+    transition: 2s
+    transition: 2s
+    
+  a:nth-child(1)
+    .item
+      background-image: linear-gradient(90deg,rgba(63,93,69,0.95)),url(https://bit.ly/2R5tqwD)
+      background-position: 0 300px
+      background-size: 100%
+      transition: 5s
+
+    &:hover .item
+      background-image: linear-gradient(90deg,rgba(255,225,128,1)),url(https://bit.ly/2R5tqwD)
+      transition: 2s
+
+    &:hover h2
+      color: #3F5D45
+
+        
+
+  a:nth-child(2) 
+    .item
+      background-image: linear-gradient(90deg,rgba(63,93,69,0.95)),url(https://bit.ly/2Dwoxd7)
+      background-position: 15px 300px
+      background-size: 100%
+    &:hover .item
+        background-image: linear-gradient(90deg,rgba(255, 225, 128,1)),url(https://bit.ly/2Dwoxd7)
+    &:hover h2
+      color: #3F5D45
+         
+  a:nth-child(3) 
+    .item
+      background-image: linear-gradient(90deg,rgba(63,93,69,0.95)),url(https://bit.ly/2OUteif)
+      background-position: 0 270px
+      background-size: 100%
+    &:hover .item
+        background-image: linear-gradient(90deg,rgba(255, 225, 128,1)),url(https://bit.ly/2OUteif)
+    &:hover h2
+      color: #3F5D45
+        
+  .item
+    width: 256px
+    height: 256px
+    display: flex
+    // flex-direction: column
+    border-right: 1px solid #ffffff
+    justify-content: center
+    align-items: center
+    background-color: #fff
+    border-radius: 3px
+    
+
+    h2
+      // 設定文字
+      color: #FFFFFF
+      writing-mode: vertical-lr
+      text-orientation: uprsight
+      letter-spacing: 3px
+      font-weight: 700
+      transition: 0.3s
+
+// ------------------prdouctIntro-----------------
+.productIntro1 
+  width: 100%
+  height: 460px
+  margin: 50px 0
+  // display: flex
+  // flex-direction: column
+  .flexBox
+    justify-content: space-between
+  .productBg
+    width: 100%
+    height: 420px
+    background-color: #EAF0ED
+    display: inline-block
+    transform: translateY(20px)
+    // transform: translateY(-70px)
+    // padding: -20px
+  .pic-container
+    width: 460px
+    height: 460px
+    // position: absolute
+    .pic
+      height: 460px
+      width: 460px
+      background-image: url("https://images.unsplash.com/photo-1519730722595-a5ff788dea4d?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=2712a33fe9b13532f0682ac4e1e749b8&auto=format&fit=crop&w=600&q=60")
+      background-size: 100%
+      background-repeat: no-repeat
+      background-position: -10px 
+      // position: absolute
+      // float: left
+  .txt
+      writing-mode: vertical-rl
+      letter-spacing: 1px
+      font-weight: 600
+      margin: 70px 0
+      line-height: 2em
+      display: flex
+      flex-direction: column
+      align-items: center
+      justify-content: center
+      display: inline-block
+      // text-align: center
+      // transform:translateY(-420px)
+      p+p
+        margin-right: 60px
+  .adjustHeight
+    transform: translateY(-420px)
+  img
+    width: 90px
+    transform: translateY(-75px)
+
+.productIntro1+.productIntro1
+  .txt
+    order: 1
+  .pic-container
+    order: 3
+    .pic
+      background-image: url("https://images.unsplash.com/photo-1501432781167-c0ccfd492297?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=621c4e9986fba1c4514dfdc30e095bd2&auto=format&fit=crop&w=600&q=60")
+  img
+    order: 2
+
+
+// --------------banner2
+
+.banner2
+  .flexBox
+    justify-content: center
+  img
+    width: 90px
+    margin: 30px 0 80px 0
+    
+
+// ------------mainProduct
+.mainProduct
+  .flexBox
+    justify-content: space-between
+  .item
+    position: relative
+    width: 300px
+    border: 1px solid #EAF0ED
+    // 設定背景圖片
+    &:nth-child(1) .pic
+      background-image: url(https://bit.ly/2zBjQuq)
+    &:nth-child(2) .pic
+      background-image: url(https://bit.ly/2zBDAxX)
+    &:nth-child(3) .pic
+      background-image: url(https://bit.ly/2QbVsVR)
+     
+  .pic
+    width: 100%
+    height: 315px
+    background-size: 100%
+    background-position: 0px   
+  .txt
+    display: flex
+    padding: 13px 0
+    h2
+      font-size: 22px
+      box-sizing: border-box
+    h2:nth-child(1)   
+      padding: 0 33px
+      border-right: 1px solid #EAF0ED
+    h2:nth-child(2)   
+      padding: 0 20px 0 25px
+  .Cartbtn a
+    display: block
+    height: 65px
+    text-align: center
+    line-height: 65px
+    background-color: #EAF0ED
+    // 設定文字
+    text-decoration: none
+    font-size: 30px
+    color: #3F5D45
+    font-weight: bolder
+  .tag
+    width: 36px
+    height: 106px
+    position: absolute
+    top: 0
+    left: 20px
+    padding: 10px
+    background-color: #3F5D45
+    box-sizing: border-box
+    p
+      writing-mode: vertical-lr
+      color: #FFFFFF
+      letter-spacing: 5px
+      font-weight: 900
+  .heartBtn 
+    position: absolute
+    top: 19px
+    right: 22px
+    border: none
+    background: none
+    &:hover
+      cursor: pointer
+      animation: heartShake .3s linear 0.1s infinite alternate
+      i 
+        // background-color: white
+        color: red
+    &:focus     
+      outline: none
+
+    i 
+      font-size: 20px
+      transition: 0.1s
+@keyframes heartShake
+  0%
+    transform: scale(1.0)
+    // width: 0px
+
+  100%
+    transform: scale(1.4)
+    // width: 20px    
+
+// ---------------footer
+  
+// --------------footerTop
+.wrap-footer 
+  width: 780px 
+  margin: 0 auto
+.footerTop
+  background-color: #3F5D45
+  padding: 38px 0
+  margin-top: 60px
+  .flexBox
+    align-items: center
+  img
+    width: 40px
+  .txt
+    h2
+      color: #EAF0ED
+      margin-left: 20px
+      // font-size: 25px
+  .mail 
+    margin-left: auto
+    display: flex
+    a
+      background-color: #fff
+      padding: 16px 20px
+      i
+        font-size: 24px
+    input 
+      padding: 16px
+      border: none
+      width: 250px
+      height: 30px
+    button
+      border: none
+      background-color: #FFE180
+      padding: 20px 24px 
+      i
+        font-size: 20px
+.footerBody
+  padding-top: 30px
+  background-color: #EAF0ED 
+  .left
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+    img
+      margin-top: 10px
+      width: 170px
+    .txt
+      p
+        padding-top: 5px
+        font-size: 20px
+  .right 
+    margin-left: auto
+    img
+      width: 60px
+.footerBot
+  background-color: #EAF0ED
+  .flexBox
+    align-items: center
+  img
+    width: 32px
+    padding: 30px 8px 30px 0
+  p 
+    margin-left: auto
+    
+
+    
+    
+
+
+
+
+
+
+
+
+
